@@ -28,7 +28,7 @@ public:
 int power; 
 int Get() 
 { 
-cout « "Vvedu potygnistb: "; 
+cout « "Enter the power: "; 
 cin » power; 
 return 0; 
 } 
@@ -40,7 +40,7 @@ public:
 int power; 
 int Get() 
 { 
-cout « "Vvedu potygnistb: "; 
+cout « "Enter the power: "; 
 cin » power; 
 return 0; 
 } 
@@ -52,7 +52,7 @@ public:
 int power; 
 int Get() 
 { 
-cout « "Vvedu potygnistb: "; 
+cout « "Enter the power: "; 
 cin » power; 
 return 0; 
 } 
@@ -64,7 +64,7 @@ public:
 int power; 
 int Get() 
 { 
-cout « "Vvedu potygnistb: "; 
+cout « "Enter the power: "; 
 cin » power; 
 return 0; 
 } 
@@ -86,7 +86,7 @@ public:
 int power; 
 int Get() 
 { 
-cout « "Vvedu potygnistb: "; 
+cout « "Enter the power: "; 
 cin » power; 
 return 0; 
 } 
@@ -98,7 +98,7 @@ public:
 int power; 
 int Get() 
 { 
-cout « "Vvedu potygnistb: "; 
+cout « "Enter the power: "; 
 cin » power; 
 return 0; 
 } 
@@ -106,13 +106,13 @@ return 0;
 
 int main() 
 { 
-cout « "Vuberu figyry:" « endl; 
-cout « "1. Televizor" « endl; 
-cout « "2. Radioprujmach" « endl; 
-cout « "3. Myzuchnuj centr" « endl; 
-cout « "4. Magnitofon" « endl; 
-cout « "5. Pralna mashuna" « endl; 
-cout « "6. Pulosos" « endl; 
+cout « "Choose figure:" « endl; 
+cout « "1. TV" « endl; 
+cout « "2. Radio" « endl; 
+cout « "3. Music center" « endl; 
+cout « "4. Tape" « endl; 
+cout « "5. Washing machine" « endl; 
+cout « "6. Pilosus" « endl; 
 int choise; 
 cin » choise; 
 if (choise == 1) 
@@ -146,6 +146,6 @@ Work *ptr6 = new VacuumCleaner;
 ptr6->Get(); 
 } 
 else 
-cout « "Nepravulnuj nomer" « endl; 
+cout « "Wrong number" « endl; 
 return 0; 
 }
