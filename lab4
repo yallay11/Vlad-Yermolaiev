@@ -1,0 +1,151 @@
+#include "stdafx.h" 
+#include <iostream> 
+
+using namespace std; 
+
+class Devices 
+{ 
+public: 
+int power; 
+virtual int Get() 
+{ 
+return 0; 
+} 
+}; 
+class Fun : public Devices 
+{ 
+public: 
+int power; 
+virtual int Get() 
+{ 
+return 0; 
+} 
+}; 
+
+class Tv : public Fun 
+{ 
+public: 
+int power; 
+int Get() 
+{ 
+cout « "Vvedu potygnistb: "; 
+cin » power; 
+return 0; 
+} 
+}; 
+
+class Radio : public Fun 
+{ 
+public: 
+int power; 
+int Get() 
+{ 
+cout « "Vvedu potygnistb: "; 
+cin » power; 
+return 0; 
+} 
+}; 
+
+class Music : public Fun 
+{ 
+public: 
+int power; 
+int Get() 
+{ 
+cout « "Vvedu potygnistb: "; 
+cin » power; 
+return 0; 
+} 
+}; 
+
+class TapeRecorder : public Fun 
+{ 
+public: 
+int power; 
+int Get() 
+{ 
+cout « "Vvedu potygnistb: "; 
+cin » power; 
+return 0; 
+} 
+}; 
+
+class Work : public Devices 
+{ 
+public: 
+virtual int Get() 
+{ 
+return 0; 
+} 
+int power; 
+}; 
+
+class WashingMachine : public Work 
+{ 
+public: 
+int power; 
+int Get() 
+{ 
+cout « "Vvedu potygnistb: "; 
+cin » power; 
+return 0; 
+} 
+}; 
+
+class VacuumCleaner : public Work 
+{ 
+public: 
+int power; 
+int Get() 
+{ 
+cout « "Vvedu potygnistb: "; 
+cin » power; 
+return 0; 
+} 
+}; 
+
+int main() 
+{ 
+cout « "Vuberu figyry:" « endl; 
+cout « "1. Televizor" « endl; 
+cout « "2. Radioprujmach" « endl; 
+cout « "3. Myzuchnuj centr" « endl; 
+cout « "4. Magnitofon" « endl; 
+cout « "5. Pralna mashuna" « endl; 
+cout « "6. Pulosos" « endl; 
+int choise; 
+cin » choise; 
+if (choise == 1) 
+{ 
+Fun *ptr1 = new Tv; 
+ptr1->Get(); 
+} 
+else if (choise == 2) 
+{ 
+Fun *ptr2 = new Radio; 
+ptr2->Get(); 
+} 
+else if (choise == 3) 
+{ 
+Fun *ptr3 = new Music; 
+ptr3->Get(); 
+} 
+else if (choise == 4) 
+{ 
+Fun *ptr4 = new TapeRecorder; 
+ptr4->Get(); 
+} 
+else if (choise == 5) 
+{ 
+Work *ptr5 = new WashingMachine; 
+ptr5->Get(); 
+} 
+else if (choise == 6) 
+{ 
+Work *ptr6 = new VacuumCleaner; 
+ptr6->Get(); 
+} 
+else 
+cout « "Nepravulnuj nomer" « endl; 
+return 0; 
+}
